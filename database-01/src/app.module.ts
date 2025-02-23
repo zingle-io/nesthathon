@@ -22,7 +22,7 @@ import { Photo } from './photo/entities/photo.entity';
       password: process.env.DB_PASSWORD || 'root',
       database: process.env.DB_DATABASE || 'test',
       entities: [User, Photo],
-      autoLoadEntities: true,
+      // autoLoadEntities: true,
       synchronize: process.env.NODE_ENV !== 'production',
     }),
     PhotoModule,
